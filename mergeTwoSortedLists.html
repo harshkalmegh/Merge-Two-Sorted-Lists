@@ -16,5 +16,16 @@
      * 4. reverse the value
      * 5. return the output
      */
+
+    //  Version 1
+    var mergeTwoLists = function (list1, list2) {
+      if (!Array.isArray(list1) || !Array.isArray(list2)) {
+        return "Enter Proper Value";
+      }
+      const combinedArray = [...list1, ...list2];
+      return combinedArray.sort();
+    };
+
+    console.log(mergeTwoLists([], [0]));
   </script>
 </html>
