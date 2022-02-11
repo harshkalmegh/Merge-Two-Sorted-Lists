@@ -25,14 +25,13 @@
       for (let i = 0; i < list2.length; i++) {
         list1.push(list2[i]);
       }
+      // debugger;
       for (let i = 0; i < list1.length; i++) {
         for (let j = i + 1; j < list1.length; j++) {
-          let current = list1[i];
-          let next = list1[j];
-          if (current > next) {
-            let temp = current;
-            current = next;
-            next = temp;
+          if (list1[i] > list1[j]) {
+            let temp = list1[i];
+            list1[i] = list1[j];
+            list1[j] = temp;
           }
         }
       }
